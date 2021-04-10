@@ -1,0 +1,162 @@
+:root {
+    --base: #b2c0e0;
+    --background-or-light: #f5f8ff;
+    --text-or-dark: #21224A;
+    /* --text-or-dark: #493c52; */
+    /* --text-or-dark: #171D47; */
+    /* --text-or-dark: #111A52; */
+    --visited: #4E5980;
+    --non-text: #5E7297;
+    --action: #0159B2;
+    --bright: #fee557;
+    --soft: #fef4ac;
+    --body-font: 1rem;
+    --h1: 11.8vw;
+    --h1-height: 13.35vw;
+    --h2: 3rem;
+    --h3: 2rem;
+}
+@media (max-width: 950px) {
+    body {
+        --h1: 11.5vw;
+        --h1-height: 13vw;
+    }
+}
+@media (max-width: 650px) {
+    body {
+        --h1: 11vw;
+        --h1-height: 12.4vw;
+    }
+}
+@media (max-width: 599px) {
+    body {
+        --h2: 2rem;
+        --h3: 1.5rem;
+    }
+}
+@media (max-width: 399px) {
+    body {
+        --h2: 1.5rem;
+        --h3: 1rem;
+        --body-font: .75rem;
+    }
+}
+html {
+    background-color: var(--base);
+}
+* {
+    box-sizing: border-box;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+body {
+    min-width: 200px;
+    font-family: 'Noto Sans', Arial, sans-serif;
+    line-height: 1.5;
+    font-size: 1rem;
+    text-decoration-skip-ink: none;
+    background-color: var(--background-or-light);
+    margin: 1rem;
+    /* border: 2px solid var(--non-text); */
+    color: var(--text-or-dark);
+    padding: 1rem;
+}
+h1 {
+    margin: 0px;
+    padding: 0 1.5rem;
+    position:relative;
+    width: 100vw;
+    height: var(--h1-height);
+    left: -2rem;
+    letter-spacing: 0.07em;
+    font-weight: 700;
+    font-size: var(--h1);
+    outline-color: 2px solid var(--text-or-dark);
+    background-color: var(--text-or-dark);
+    color: var(--background-or-light);
+}
+h2 {
+    font-size: var(--h2);
+    margin-bottom: 0px;
+    font-weight: 700;
+}
+h3 {
+    font-size: var(--h3);
+    margin-bottom: 0px;
+    font-weight: 400;
+}
+a:-webkit-any-link {
+    cursor: pointer;
+    text-decoration: underline;
+}
+a {
+    color: #44384C;
+}
+a:visited {
+    color: var(--visited);
+}
+a:hover, a:focus, a:active {
+    color: var(--action);
+}
+[tabindex]:not([tabindex="-1"]), a, button, input, select, textarea {
+    outline: 2px solid transparent;
+    outline-offset: 5px;
+    transition: outline-offset .2s linear;
+}
+.nav {
+}
+.large {
+    width: 70rem;
+    max-width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header {
+    align-items: center;
+    margin-top: 1rem;
+}
+.skip {
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    transform: translateY(-100%);
+}
+.skip:focus {
+    top: 1rem;
+    left: 1rem;
+    transform: translateY(0);
+    outline-color: 2px solid var(--text-or-dark);
+    background-color: var(--text-or-dark);
+    color: var(--background-or-light);
+    padding: .35rem;
+    z-index: 9999;
+}
+.split {
+    width: 50%;
+    float: left;
+}
+.split-33 {
+    width: 33.3%;
+    float: left;
+}
+.split-66 {
+    width: 66.6%;
+    float: left;
+}
+.sibling-left {
+    padding-right: 2vw;
+}
+.sibling-right {
+    padding-left: 2vw;
+}
+.no-top-margin {
+    margin-top: 0px;
+}
+.invert {
+    background-color: var(--soft);
+    margin: 0px;
+    padding: .5rem 3rem;
+    position:relative;
+    width: 50vw;
+    left: -3rem;
+}
