@@ -1,0 +1,109 @@
+:root {
+    --base: #b2c0e0;
+    --background-or-light: #f5f8ff;
+    --text-or-dark: #21224A;
+    /* --text-or-dark: #493c52; */
+    /* --text-or-dark: #171D47; */
+    --hilite-text: #111A52;
+    --visited: #4E5980;
+    --non-text: #5E7297;
+    --action: #0159B2;
+    --bright: #fee557;
+    --soft: #fef4ac;
+    --body-font: 1rem;
+    --h1: 11.8vw;
+    --h1-height: 13.35vw;
+    --h2: 3rem;
+    --h3: 2rem;
+}
+
+
+html {
+  background-color: var(--base);
+}
+* {
+    box-sizing: border-box;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+body {
+    /* min-width: 200px; */
+    font-family: 'Noto Sans', Arial, sans-serif;
+    line-height: 1.5;
+    font-size: 1rem;
+    text-decoration-skip-ink: none;
+    background-color: var(--background-or-light);
+    /* margin: 1rem; */
+    /* border: 2px solid var(--non-text); */
+    /* color:  var(--text-or-dark); */
+    /* padding: 1rem; */
+    /* outline: 10rem solid var(--base); */
+    /* box-shadow: inset 20rem var(--base); */
+}
+
+@media (min-width: 650px) {
+  body {
+    /* display: flex;
+    flex-wrap: wrap; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: space-around; */
+    /* flex-wrap: wrap; */
+  }
+
+  header {
+    /* width: 100vw; */
+  }
+
+  h1 {
+    margin: 0px;
+    /* width: 100vw; */
+
+    /* font-size: var(--h1);
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    font-weight: 700; */
+
+    color: var(--background-or-light);
+    outline-color: 2px solid var(--text-or-dark);
+    background-color: var(--text-or-dark);
+    /* 
+    padding: 0 1.5rem;
+    position: relative;
+    width: 100%;
+    height: var(--h1-height);
+    left: -2rem;
+   */
+  }
+
+  main {
+    width: 70vw;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around;  */
+    /* align-items: center; */
+  }
+
+  section.columns {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 2rem; */
+  }
+
+  section.columns > div {
+    max-width: 45%;
+    /* flex-grow: 1; */
+  }
+
+  section.hilite > div {
+    padding: 0rem 0.75rem;
+    background-color: var(--soft);
+  }
+
+  section.hilite h3 {
+    margin: 0;
+    color: var(--hilite-text);
+  }
+  
+}

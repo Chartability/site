@@ -69,6 +69,7 @@ h1 {
     height: var(--h1-height);
     left: -2rem;
     letter-spacing: 0.07em;
+    text-transform: uppercase;
     font-weight: 700;
     font-size: var(--h1);
     outline-color: 2px solid var(--text-or-dark);
