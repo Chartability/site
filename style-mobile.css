@@ -11,7 +11,7 @@
     --bright: #fee557;
     --soft: #fef4ac;
     --body-font: 1rem;
-    --h1: 11.8vw;
+    --h1: 11vw;
     --h1-height: 13.35vw;
     --h2: 3rem;
     --h3: 2rem;
@@ -56,24 +56,25 @@ body {
   }
 
   h1 {
-    margin: 0px;
-    /* width: 100vw; */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    /* padding-bottom: -25px; */
+    /* text-shadow: 0 7px red; */
 
-    /* font-size: var(--h1);
+    /* width: 100vw; */
+    width: 100%;
+
+    font-size: var(--h1);
     letter-spacing: 0.07em;
     text-transform: uppercase;
-    font-weight: 700; */
+    font-weight: 700; 
 
     color: var(--background-or-light);
-    outline-color: 2px solid var(--text-or-dark);
+    /* outline-color: 2px solid var(--text-or-dark); */
     background-color: var(--text-or-dark);
-    /* 
-    padding: 0 1.5rem;
-    position: relative;
     width: 100%;
     height: var(--h1-height);
-    left: -2rem;
-   */
   }
 
   main {
