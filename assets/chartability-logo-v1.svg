@@ -1,0 +1,56 @@
+<svg id="chart-bar" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <title>Chartability Logo</title>
+  <style>
+    .frame {
+      fill: #C210CA;
+    }
+
+    .check {
+      stroke: #18CA10;
+      stroke-width: 8px;
+      stroke-linecap: square;
+      fill: none;
+    }
+
+    .check-outline {
+      stroke: white;
+      stroke-width: 16px;
+      stroke-linecap: round;
+      fill: none;
+    }
+
+    .axis-color {
+      stroke: white;
+      stroke-width: 2px;
+      stroke-linecap: round;
+      fill: none;
+    }
+
+    .axis-labels {
+      fill: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      font-weight: bold;
+    }
+    
+  </style>
+  <rect x="0" y="0" width="100%" height="100%" class="frame"/>
+
+  <text class="axis-labels">
+    <tspan x="6" y="20">P</tspan>
+    <tspan x="6" y="74">O</tspan>
+    <tspan x="6" y="128">U</tspan>
+    <tspan x="6" y="180">R</tspan>
+    <tspan x="19" y="195">C</tspan>
+    <tspan x="102" y="195">A</tspan>
+    <tspan x="186" y="195">F</tspan>
+  </text>
+
+  <defs>
+    <path id="check" d="M45,125 L50,120 L85,155 L180,25 L185,30"/>
+  </defs>
+
+  <path d="M20,15 H25 V180  M20,69 H25  M20,123 H25  M20,175 H190 V180  M107.5,175 V180" class="axis-color" />
+  <use href="#check" class="check-outline" />
+  <use href="#check" class="check" />
+</svg>
