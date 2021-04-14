@@ -153,11 +153,12 @@ a:hover, a:focus, a:active {
 .no-top-margin {
     margin-top: 0px;
 }
+
 .invert {
     background-color: var(--soft);
     margin: 0px;
-    padding: .5rem 3rem;
+    padding: 1rem 2rem;
     position:relative;
-    width: 50vw;
+    width: 65%;
     left: -3rem;
 }
