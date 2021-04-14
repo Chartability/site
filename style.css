@@ -153,6 +153,8 @@ a:hover, a:focus, a:active {
 .no-top-margin {
     margin-top: 0px;
 }
+
+#CTA,
 .invert {
     background-color: var(--soft);
     margin: 0px;
