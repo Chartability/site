@@ -85,6 +85,10 @@ body {
     max-width: 45%;
   }
 
+  img {
+    width: 100%;
+  }
+
   section.hilite > div {
     padding-top: 0.75rem;
   }
